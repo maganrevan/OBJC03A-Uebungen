@@ -8,12 +8,30 @@
 
 import Foundation
 
+// Aufgabe 4.3
+
+func product(x : Int, y : Int) -> Int{
+    return (x * y)
+}
+
+// Aufgabe 4.4
+
+func quadrat(z : Int) -> Int{
+    return (product(x: z, y: z))
+}
+
+print("Geben Sie bitte eine Zahl ein: ", terminator:"")
+let einVariable1 = Int(readLine()!)!
+//bitte in einer Zeile eingeben
+print("Das Quadrat der Zahl ist: \(quadrat(z: einVariable1))")
+
 // Aufgabe 3.3
 /* #################################################
             break in einer Schleife
  ################################################# */
 
-var i = 0
+/*
+ var i = 0
 var bFlag = true
 while i <= 5 && bFlag {
     print("Geben Sie eine 1 zum Abbruch ein: ",terminator:"")
@@ -23,6 +41,7 @@ while i <= 5 && bFlag {
     }
 }
 print("Schleife beendet")
+ */
 
 // Aufgabe 2.2
 
